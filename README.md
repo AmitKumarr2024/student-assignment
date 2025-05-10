@@ -24,3 +24,5 @@ A **Student Management System** built with **React**, **Redux**, and **Firebase*
    ```bash
    git clone https://github.com/your-username/student-management-system.git
    cd student-management-system
+
+live link: https://studenttime.netlify.app/ 
