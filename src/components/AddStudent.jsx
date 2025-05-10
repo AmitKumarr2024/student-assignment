@@ -1,10 +1,17 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addStudent } from "../Store/studentSlice";
+import { Navigate } from "react-router-dom"; // Import Navigate for redirection
 
 const AddStudent = () => {
   const dispatch = useDispatch();
   const { loading, error } = useSelector((state) => state.students);
+  const user = useSelector((state) => state.auth.user); // Assuming 'user' contains the authentication state
+
+  // Redirect if the user is not logged in
+  if (!user) {
+    return <Navigate to="/login" replace />;
+  }
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -57,7 +64,7 @@ const AddStudent = () => {
 
       {/* Modal Overlay */}
       {isOpen && (
-        <div className="fixed inset-0  bg-opacity-20  flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-opacity-20 flex items-center justify-center z-50">
           {/* Modal Content */}
           <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
             <div className="flex justify-between items-center mb-4">
