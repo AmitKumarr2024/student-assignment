@@ -5,8 +5,8 @@ import Login from "../Pages/Login";
 import Signup from "../Pages/Signup";
 import Students from "../Pages/Students";
 import ProtectedRoutes from "../ProtectedRoutes";
-import StudentsEdit from "../components/StudentsEdit.jsx";
-import StudentsDetail from "../Pages/studentsDetail.jsx";
+import StudentsEdit from "../components/StudentsEdit";
+import StudentsDetail from "../Pages/StudentsDetail"; 
 
 const Router = createBrowserRouter([
   {
@@ -17,7 +17,6 @@ const Router = createBrowserRouter([
         index: true,
         element: <Home />,
       },
-
       {
         element: <ProtectedRoutes />,
         children: [
