@@ -5,8 +5,8 @@ import Login from "../Pages/Login";
 import Signup from "../Pages/Signup";
 import Students from "../Pages/Students";
 import ProtectedRoutes from "../ProtectedRoutes";
-import StudentsDetail from "../Pages/studentsDetail";
 import StudentsEdit from "../components/StudentsEdit";
+import StudentsDetail from "../Pages/studentsDetail";
 
 const Router = createBrowserRouter([
   {
