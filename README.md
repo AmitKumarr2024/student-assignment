@@ -1,12 +1,26 @@
-# React + Vite
+# Student Management System (React + Redux + Firebase)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **Student Management System** built with **React**, **Redux**, and **Firebase** to manage student records. The app allows adding students and viewing their information with a responsive UI using **Tailwind CSS**.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add new student records
+- View all students
+- Firebase integration for data storage
+- Responsive design with Tailwind CSS
+- State management with Redux
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React.js** for the UI
+- **Redux** for state management
+- **Firebase** for database storage
+- **Tailwind CSS** for styling
+- **React-Toastify** for notifications
+
+## Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/student-management-system.git
+   cd student-management-system
