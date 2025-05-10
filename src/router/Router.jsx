@@ -7,6 +7,7 @@ import Students from "../Pages/Students";
 import ProtectedRoutes from "../ProtectedRoutes";
 import StudentsEdit from "../components/StudentsEdit";
 import StudentsDetail from "../Pages/StudentsDetail"; 
+import AddStudent from "../components/AddStudent";
 
 const Router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const Router = createBrowserRouter([
             path: "studentEdit/:id",
             element: <StudentsEdit />,
           },
+          {
+            path: "addStudent",
+            element: <AddStudent />,
+          }
         ],
       },
     ],
